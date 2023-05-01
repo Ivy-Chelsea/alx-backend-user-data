@@ -14,6 +14,6 @@ def hash_password(password: str) -> bytes:
 
 def is_valid(hashed_password: bytes, password: str) -> bool:
     """
-    Function that checks is a hashed password was formed from the given password.
+    Function that checks if hashed password was formed from given password
     """
     return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
